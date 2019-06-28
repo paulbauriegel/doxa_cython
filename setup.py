@@ -29,6 +29,5 @@ setup(
                 Extension("bin_cod", sources=['bin_cod.pyx'], language="c++", 
                     extra_link_args=["-lm","-lc++abi", "-lstdc++fs", "-lstdc++"],)
     ]),
-    #cmdclass = {'build_ext': build_ext },
     cmdclass = {'build_ext': my_build_ext },
 )

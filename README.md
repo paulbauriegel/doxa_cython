@@ -1,12 +1,17 @@
-Cython Wrapper for Doxa
-========
+# Cython Wrapper for Doxa
 
-Installation
-------------
+A quick and dirty cython wrapper for the Doxa Binarization Framework.
 
-`pip3 install --user doxa_cython`
+## Installation
 
-or
+`python3 setup.py build_ext --inplace`
 
-`python3 -m pip install --user doxa_cython`
+## Usage
 
+```python
+import bin_cod
+from PIL import Image
+im = Image.open("test/2JohnC1V3.ppm")
+new_img = bin_cod.transform(im, 2)
+new_img.show()
+```

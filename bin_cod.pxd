@@ -1,6 +1,7 @@
-from libcpp.string cimport string as libcpp_string
+# cython: language_level=3, boundscheck=False
+from libcpp.string cimport string
 
-cdef extern from "bin_cod.hpp":   
+cdef extern from "bin_cod.hpp" namespace "binarize": 
     cdef enum BinarizeMethod:
         otsu 
         bernsen 
@@ -13,6 +14,4 @@ cdef extern from "bin_cod.hpp":
         trsingh 
         wan 
         isauvola
-    cdef cppclass Binarize:
-        Binarize() except +
-        void transform(libcpp_string source, BinarizeMethod m, libcpp_string output)
+    cdef void transform(string source, BinarizeMethod m, string output) except +

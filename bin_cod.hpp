@@ -1,5 +1,7 @@
-// Δoxa Binarization Framework Demo
-// License: CC0 2018, "Freely you have received; freely give." - Matt 10:8
+#ifndef BINARIZE_H
+#define BINARIZE_H
+
+#include <string>
 #include <iostream>
 #include <algorithm>
 #include "Doxa/Image.hpp"
@@ -19,23 +21,22 @@
 using namespace std;
 using namespace Doxa;
 
-enum BinarizeMethod { 
-    otsu,
-    bernsen,
-    niblack,
-    sauvola,
-    wolf,
-    nick,
-    gatos,
-    su,
-    trsingh,
-    wan,
-    isauvola
-};
+namespace binarize {
 
-class Binarize{
-    public:
-        Binarize();
+    enum BinarizeMethod { 
+        otsu,
+        bernsen,
+        niblack,
+        sauvola,
+        wolf,
+        nick,
+        gatos,
+        su,
+        trsingh,
+        wan,
+        isauvola
+    };
+
     static void transform(std::string source, BinarizeMethod m, std::string output){
         const Image image = PNM::Read(source);
 
@@ -94,6 +95,9 @@ class Binarize{
                 break;
         
         }
-        PNM::Write(binaryImage, output + "-Bin.pbm");
+        PNM::Write(binaryImage, output);
     }
-};
+
+}
+
+#endif
