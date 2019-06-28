@@ -1,6 +1,6 @@
 from libcpp.string cimport string as libcpp_string
 
-cdef extern from "Binarize.hpp":   
+cdef extern from "bin_cod.hpp":   
     cdef enum BinarizeMethod:
         otsu 
         bernsen 

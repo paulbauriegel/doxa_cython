@@ -1,19 +1,20 @@
 // Δoxa Binarization Framework Demo
 // License: CC0 2018, "Freely you have received; freely give." - Matt 10:8
 #include <iostream>
-#include "../include/Image.hpp"
-#include "../include/PNM.hpp"
-#include "../include/Otsu.hpp"
-#include "../include/Bernsen.hpp"
-#include "../include/Niblack.hpp"
-#include "../include/Sauvola.hpp"
-#include "../include/Wolf.hpp"
-#include "../include/Nick.hpp"
-#include "../include/Gatos.hpp"
-#include "../include/Su.hpp"
-#include "../include/TRSingh.hpp"
-#include "../include/Wan.hpp"
-#include "../include/ISauvola.hpp"
+#include <algorithm>
+#include "Doxa/Image.hpp"
+#include "Doxa/PNM.hpp"
+#include "Doxa/Otsu.hpp"
+#include "Doxa/Bernsen.hpp"
+#include "Doxa/Niblack.hpp"
+#include "Doxa/Sauvola.hpp"
+#include "Doxa/Wolf.hpp"
+#include "Doxa/Nick.hpp"
+#include "Doxa/Gatos.hpp"
+#include "Doxa/Su.hpp"
+#include "Doxa/TRSingh.hpp"
+#include "Doxa/Wan.hpp"
+#include "Doxa/ISauvola.hpp"
 
 using namespace std;
 using namespace Doxa;
