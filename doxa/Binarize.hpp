@@ -1,19 +1,22 @@
 // Δoxa Binarization Framework Demo
 // License: CC0 2018, "Freely you have received; freely give." - Matt 10:8
 #include <iostream>
-#include "Image.hpp"
-#include "PNM.hpp"
-#include "Otsu.hpp"
-#include "Bernsen.hpp"
-#include "Niblack.hpp"
-#include "Sauvola.hpp"
-#include "Wolf.hpp"
-#include "Nick.hpp"
-#include "Gatos.hpp"
-#include "Su.hpp"
-#include "TRSingh.hpp"
-#include "Wan.hpp"
-#include "ISauvola.hpp"
+#include "../include/Image.hpp"
+#include "../include/PNM.hpp"
+#include "../include/Otsu.hpp"
+#include "../include/Bernsen.hpp"
+#include "../include/Niblack.hpp"
+#include "../include/Sauvola.hpp"
+#include "../include/Wolf.hpp"
+#include "../include/Nick.hpp"
+#include "../include/Gatos.hpp"
+#include "../include/Su.hpp"
+#include "../include/TRSingh.hpp"
+#include "../include/Wan.hpp"
+#include "../include/ISauvola.hpp"
+
+using namespace std;
+using namespace Doxa;
 
 enum BinarizeMethod { 
     otsu,

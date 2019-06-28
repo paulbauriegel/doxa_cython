@@ -13,6 +13,6 @@ cdef extern from "Binarize.hpp":
         trsingh 
         wan 
         isauvola
-    cdef cppclass BinCod:
-        BinCod() except +
+    cdef cppclass Binarize:
+        Binarize() except +
         void transform(libcpp_string source, BinarizeMethod m, libcpp_string output)
