@@ -4,19 +4,19 @@
 #include <string>
 #include <iostream>
 #include <algorithm>
-#include "Doxa/Image.hpp"
-#include "Doxa/PNM.hpp"
-#include "Doxa/Otsu.hpp"
-#include "Doxa/Bernsen.hpp"
-#include "Doxa/Niblack.hpp"
-#include "Doxa/Sauvola.hpp"
-#include "Doxa/Wolf.hpp"
-#include "Doxa/Nick.hpp"
-#include "Doxa/Gatos.hpp"
-#include "Doxa/Su.hpp"
-#include "Doxa/TRSingh.hpp"
-#include "Doxa/Wan.hpp"
-#include "Doxa/ISauvola.hpp"
+#include "Image.hpp"
+#include "PNM.hpp"
+#include "Otsu.hpp"
+#include "Bernsen.hpp"
+#include "Niblack.hpp"
+#include "Sauvola.hpp"
+#include "Wolf.hpp"
+#include "Nick.hpp"
+#include "Gatos.hpp"
+#include "Su.hpp"
+#include "TRSingh.hpp"
+#include "Wan.hpp"
+#include "ISauvola.hpp"
 
 using namespace std;
 using namespace Doxa;

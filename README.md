@@ -4,7 +4,12 @@ A quick and dirty cython wrapper for the Doxa Binarization Framework.
 
 ## Installation
 
-`python3 setup.py build_ext --inplace`
+```bash
+git clone https://github.com/brandonmpetty/Doxa.git
+git clone https://github.com/paulbauriegel/doxa_cython.git
+cd doxa_cython
+CPPFLAGS=-I$PWD/../Doxa/Doxa python3 setup.py build_ext --inplace
+```
 
 ## Usage
 
