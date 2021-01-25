@@ -1,6 +1,6 @@
 # Cython Wrapper for Doxa
 
-A quick and dirty cython wrapper for the [Doxa Binarization Framework](https://github.com/brandonmpetty/Doxa).
+A quick and dirty cython wrapper for the [Doxa Binarization Framework](https://github.com/brandonmpetty/Doxa). This project is obsolete by now. Please use the official wrapper from [here](https://github.com/brandonmpetty/Doxa/tree/master/Bindings/Python). 
 
 ## Installation
 
